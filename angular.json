@@ -15,6 +15,9 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
+            "polyfills": [
+              "zone.js"
+            ],
             "assets": [
               {
                 "glob": "**/*",
@@ -73,6 +76,9 @@
           "builder": "@angular/build:karma",
           "options": {
             "tsConfig": "tsconfig.spec.json",
+            "polyfills": [
+              "zone.js"
+            ],
             "assets": [
               {
                 "glob": "**/*",
@@ -86,5 +92,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f1d7a9d0-16fa-44fe-8d6c-78b27096c03e"
   }
 }
